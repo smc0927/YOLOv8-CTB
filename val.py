@@ -3,8 +3,8 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('runs/train/exp26/weights/best.pt')
-    model.val(data=r'C:\Users\Administrator\Desktop\Snu77\ultralytics-main\New_GC-DET\data.yaml',
+    model = YOLO('r'best.pt')
+    model.val(data=r'data.yaml',
               split='val',
               imgsz=640,
               batch=16,
