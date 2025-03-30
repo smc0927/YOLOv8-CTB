@@ -3,11 +3,11 @@ warnings.filterwarnings('ignore')
 from ultralytics import YOLO
 
 if __name__ == '__main__':
-    model = YOLO('yolov8-ASFFHead.yaml')
+    model = YOLO('yolov8.yaml')
 
     # model.load('yolov8n.pt') # 是否加载预训练权重,科研不建议大家加载否则很难提升精度
 
-    model.train(data=r'C:\Users\Administrator\Desktop\Snu77\ultralytics-main\New_GC-DET\data.yaml',
+    model.train(data=r'data.yaml',
                 # 如果大家任务是其它的'ultralytics/cfg/default.yaml'找到这里修改task可以改成detect, segment, classify, pose
                 cache=False,
                 imgsz=640,
